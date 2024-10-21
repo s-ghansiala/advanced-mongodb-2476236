@@ -1,3 +1,9 @@
+/*----------------------------------------------------------*/
+// The script before this has already mongos servers using the conf file. These are total of 9 (3 config + 6 sharded).
+// Now we login to mongo shell and ask to create a replica set with three replicas.
+// This script does thus for config servers, the next two scripts does the same for sharded srevers 
+mongosh --port 27019
+/*----------------------------------------------------------*/
 rs.initiate()
 
 use admin
